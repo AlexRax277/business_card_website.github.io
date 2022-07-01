@@ -75,6 +75,7 @@ hero__subtitle {
     max-width: 800px;
     justify-self: center;
     margin-top: 100px;
+    margin-left: 100px;
     overflow: hidden;
     height: 70vh;
     border: 10px solid #fff;
@@ -101,4 +102,67 @@ hero__subtitle {
     100% {
         border-radius: 48% 52% 50% 50% / 26% 27% 73% 74%;
     }
+}
+
+.glow-on-hover {
+    font-family: inherit;
+    font-size: 16px;
+    width: 220px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: rgb(5, 5, 5);
+    background: inherit;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: -webkit-linear-gradient(37deg, #35c4e3,#8baefb,#e88acb,#f9806f);
+    background: linear-gradient(37deg, #35c4e3,#8baefb,#e88acb,#f9806f);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(25px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
