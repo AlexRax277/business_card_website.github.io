@@ -4,59 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <!-- Шрифт -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,600&display=swap" rel="stylesheet">
-    
-    <!-- Файл со стилями -->
+    <title>Alexander Rakovchen - web_dev</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <canvas class="canvas"></canvas>
     <header class="header">
-        <a class="header__logo logo" href="https://alexrax277.github.io/business_card_website.github.io/">Сайт Александра Раковчена</a> 
+        <a class="header__logo logo" href="https://alexrax277.github.io/business_card_website.github.io/">
+            <img class="img-logo" src="./icons/main_logo.png" alt="Web Developer">
+            <h3>Web Developer</h3>
+        </a> 
     </header>
     <div class="hero">
-        <div class="container hero__container">
+        <div class="container">
             <div class="hero__about">
-                <h1 class="hero__title">
-                    Fullstack-разработчик
-                </h1>
-                <h2 class="hero__subtitle">
-                    Александр Раковчен
-                </h2>
-                <p class="hero__description">
-                    Привет! Я начинающий fullstack-разработчик. <br>Пишите/звоните для сотрудничества.
-                </p>
-                <p>
-                    Технологии:
+                <div class="hero__description">
+                    <p class="intro">
+                        Привет! Я Web-разработчик с образованием в Netology Ltd.
+                    </p>
+                    <p class="about-me">
+                        Несколько слов обо мне:
+                    </p>
+                    <ul class="experience-list">
+                        <li><b>Опыт:</b> Работаю в сфере веб-разработки, охватывая как frontend, так и backend.</li>
+                        <li><b>Образование:</b> Завершил обучение в Netology Ltd, но обучение для меня — непрерывный процесс.</li>
+                        <li><b>Курсы:</b> Успешно прошел ряд курсов, охватывающих различные аспекты веб-разработки.</li>
+                    </ul>
+                    <p class="technologies">
+                        Технологии:
+                    </p>
                     <div class="hero__tech">
-                        <img src="icons\tech\icons8-питон-48.png" alt="python">
-                        <img src="icons\tech\icons8-django-48.png" alt="django">
-                        <img src="icons\tech\icons8-api-48.png" alt="api">
-                        <img src="icons\tech\icons8-html-5-48.png" alt="html">
-                        <img src="icons\tech\icons8-css3-48.png" alt="css">
-                        <img src="icons\tech\icons8-git-48.png" alt="git">
-                        <img src="icons\tech\icons8-github-48.png" alt="github">
-                        <img src="icons\tech\icons8-javascript-48.png" alt="js">
-                        <img src="icons\tech\icons8-postgresql-48.png" alt="postgresql">
+                        <img class="tech-logo" src="icons\tech\icons8-javascript-48.png" alt="js">
+                        <img class="tech-logo" src="icons\tech\icons8-nodejs-48.png" alt="nodejs">
+                        <img class="tech-logo" src="icons\tech\icons8-npm-48.png" alt="npm">
+                        <img class="tech-logo" src="icons\tech\icons8-yarn-logo-48.png" alt="yarn">
+                        <img class="tech-logo" src="icons\tech\icons8-api-48.png" alt="api">
+                        <img class="tech-logo" src="icons\tech\icons8-eslint-48.png" alt="eslint">
+                        <img class="tech-logo" src="icons\tech\icons8-babel-48.png" alt="babel">
+                        <img class="tech-logo" src="icons\tech\icons8-webpack-48.png" alt="webpack">
+                        <img class="tech-logo" src="icons\tech\icons8-react-48.png" alt="react">
+                        <img class="tech-logo" src="icons\tech\icons8-redux-48.png" alt="redux">
+                        <img class="tech-logo" src="icons\tech\icons8-питон-48.png" alt="python">
+                        <img class="tech-logo" src="icons\tech\icons8-django-48.png" alt="django">
+                        <img class="tech-logo" src="icons\tech\icons8-git-48.png" alt="git">
+                        <img class="tech-logo" src="icons\tech\icons8-github-48.png" alt="github">
+                        <img class="tech-logo" src="icons\tech\icons8-json-48.png" alt="json">
+                        <img class="tech-logo" src="icons\tech\icons8-postman-48.png" alt="postman">
+                        <img class="tech-logo" src="icons\tech\icons8-markdown-48.png" alt="markdown">                      
+                        <img class="tech-logo" src="icons\tech\icons8-sql-48.png" alt="sql">
+                        <img class="tech-logo" src="icons\tech\icons8-mysql-logo-48.png" alt="mysql">
+                        <img class="tech-logo" src="icons\tech\icons8-postgresql-48.png" alt="postgresql">
                     </div>
-                </p>
-                <button class="glow-on-hover" type="button">Резюме</button>
+                    <p class="looking-for">
+                        Что я ищу:
+                    </p>
+                    <ul class="looking-for-list">
+                        <li><b>Динамичную среду:</b> Где могу вносить вклад и расти профессионально.</li>
+                        <li><b>Инновации:</b> Готов к тому, чтобы быть частью проектов, которые меняют игру.</li>
+                        <li><b>Команду:</b> Где каждый член ценится и важен для достижения общих целей.</li>
+                    </ul>
+                    <p class="contact">
+                        Если вы ищете человека, готового к вызовам и в поиске возможности сделать важный вклад в вашу команду, давайте связываться! Я открыт к новым интересным предложениям.
+                    </p>
+                </div>
                 <p>
-                    Со мной можно связаться:
                     <div class="hero__links">
-                        <a class="hero__link" href="mailto:rakovchen@list.ru"><img src="icons\mail-send-regular-24.png" alt="mail"></a>
-                        <a class="hero__link" href="https://api.whatsapp.com/send?phone=79811210961"><img src="icons\whatsapp-logo-24.png" alt="whatsapp"></a>
-                        <a class="hero__link" href="https://telegram.me/Alexander_Rakovchen"><img src="icons\telegram-logo-24.png" alt="telegram"></a>
+                        <a class="hero__link" href="mailto:rakovchen@list.ru"><img class="img-link" src="icons\mail-send-regular-24.png" alt="mail"></a>
+                        <a class="hero__link" href="https://api.whatsapp.com/send?phone=79811210961"><img class="img-link" src="icons\whatsapp-logo-24.png" alt="whatsapp"></a>
+                        <a class="hero__link" href="https://telegram.me/Alexander_Rakovchen"><img class="img-link" src="icons\telegram-logo-24.png" alt="telegram"></a>
                     </div>
                 </p>
             </div>
-            <div class="hero__box">
-                <img class="hero_foto" src="foto.jpeg" alt="foto">
+            <div class="hero__box-container">
+                <h4 class="hero__title">
+                    Александр Раковчен
+                </h4>
+                <div class="hero__box">
+                    <img class="hero_foto" src="foto.jpg" alt="foto">
+                </div>
+                <div class="cv-title">Резюме:</div>
+                <div class="cv">
+                    <button class="glow-on-hover" type="button">Fullstack</button>
+                    <button class="glow-on-hover" type="button">Frontend</button>
+                </div>
             </div>
         </div>
     </div>

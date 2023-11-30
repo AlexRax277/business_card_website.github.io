@@ -1,5 +1,5 @@
 body {
-    font-family: 'Bitter', serif;
+    font-family: 'Garamond', sans-serif;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -9,7 +9,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: aliceblue;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -17,110 +16,124 @@ body {
     z-index: -1;
 }
 
-.hero_foto {
-    height: 70vh;
-}
-
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 300;
-    color: rgba(0, 0, 0, 0.33);
+    font-size: 30px;
 }
 
 .header__logo {
     color: black;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-logo {
+    width: 5%;
+    margin-right: 10px;
 }
 
 .hero {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
 }
 
 .container {
-    max-width: 1230px;
-    width: 100%;
+    max-width: 70%;
     margin: 0 auto;
-    padding: 0 15px;
-}
-
-.hero__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(290px, 1fr));
-    grid-gap: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero__about {
+    width: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    align-items: start;
 }
 
 .hero__title {
-    margin-bottom: 20px;
-    font-size: 48px;
-    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-size: 32px;
+    font-weight: 600; 
 }
 
-hero__subtitle {
-    margin-bottom: 15px;
-    font-size: 32px;
-    font-weight: 400;
+.hero__description {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.intro, .experience-list, .looking-for, .contact, .about-me, .technologies, .looking-for-list {
+    margin: 0;
+    padding: 7px;
+    list-style-type: none;
+}
+
+.intro, .experience-list, .hero__tech, .looking-for-list {
+    padding-left: 30px;
+}
+
+.about-me, .technologies, .looking-for, .contact {
+    padding-left: 15px;
 }
 
 .hero__tech {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 30%;
+    justify-content: center;
+    width: 40%;
+}
+
+.tech-logo {
+    margin: 0px 15px 15px 0px;
+}
+
+.hero__links {
+    width: 100%;
+    display: flex;
+    justify-content: end;
 }
 
 .hero__link {
-    margin-right: 15px;
+    width: 10%;
+}
+
+.img-link {
+    width: 35%;
+}
+
+.hero__box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
 
 .hero__box {
-    max-width: 800px;
-    justify-self: center;
-    margin-top: 100px;
-    margin-left: 100px;
+    width: 350px;
     overflow: hidden;
-    height: 70vh;
-    border: 10px solid #fff;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-    animation: foto-animate 12s infinite alternate;
+    border-radius: 10%;
+    border: 5px solid #fff; 
 }
 
-@keyframes foto-animate {
-    0% {
-        border-radius: 46% 54% 77% 23% / 54% 35% 65% 46%;
-    }
-    20% {
-        border-radius: 27% 73% 59% 41% / 27% 68% 32% 73%;
-    }
-    40% {
-        border-radius: 46% 54% 32% 68% / 32% 36% 64% 68%;
-    }
-    60% {
-        border-radius: 23% 77% 70% 30% / 76% 17% 83% 24%;
-    }
-    80% {
-        border-radius: 48% 52% 49% 51% / 46% 47% 53% 54%;
-    }
-    100% {
-        border-radius: 48% 52% 50% 50% / 26% 27% 73% 74%;
-    }
+.hero_foto {
+    width: 100%; 
+    height: 100%;
 }
 
 .glow-on-hover {
     font-family: inherit;
-    font-size: 16px;
-    width: 220px;
-    height: 30px;
+    margin-top: 0;
+    font-size: 20px;
+    width: 50%;
+    height: 4vh;
     border: none;
     outline: none;
     color: rgb(5, 5, 5);
@@ -177,4 +190,16 @@ hero__subtitle {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+.cv-title {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.cv {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
