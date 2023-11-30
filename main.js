@@ -1,7 +1,9 @@
 import Matrix from "./Matrix.js";
 
-const btn = document.querySelector('.glow-on-hover')
-btn.addEventListener('click', () => {window.location.href='https://github.com/AlexRax277/AlexRax277/blob/main/CV_RakovchenAV.pdf'})
+const fullstack_btn = document.getElementById('Fullstack-button');
+fullstack_btn.addEventListener('click', () => {window.location.href='https://github.com/AlexRax277/AlexRax277/blob/main/CV_RakovchenAV.pdf'});
+const frontend_btn = document.getElementById('Frontend-button');
+frontend_btn.addEventListener('click', () => {window.location.href='https://github.com/AlexRax277/AlexRax277/blob/main/CV_RakovchenAV-frontend.pdf'});
 
 const canvas = document.querySelector('.canvas');
 const context = canvas.getContext('2d');
