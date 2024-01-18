@@ -241,9 +241,9 @@ body {
         padding: 1vw;
     }
 
-    .hero__box-container {
+    /* .hero__box-container {
         margin-top: 2vh;
-    }
+    } */
 
     .hero__title, .cv-title, .glow-on-hover {
         font-size: 3vw;
