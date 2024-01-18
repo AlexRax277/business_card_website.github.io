@@ -116,10 +116,6 @@ body {
     border-radius: 12px;
 }
 
-.hero__links:hover {
-    background-color: whitesmoke;
-}
-
 .hero__link {
     width: 10%;
     margin: 0;
@@ -240,10 +236,6 @@ body {
         margin: 0;
         padding: 1vw;
     }
-
-    /* .hero__box-container {
-        margin-top: 2vh;
-    } */
 
     .hero__title, .cv-title, .glow-on-hover {
         font-size: 3vw;
