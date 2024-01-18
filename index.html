@@ -9,15 +9,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas class="canvas"></canvas>
+    <!-- <canvas class="canvas"></canvas>  -->
     <header class="header">
-        <a class="header__logo logo" href="https://alexrax277.github.io/business_card_website.github.io/">
+        <a class="header__logo" href="https://alexrax277.github.io/business_card_website.github.io/">
             <img class="img-logo" src="./icons/main_logo.png" alt="Web Developer">
-            <h3>Web Developer</h3>
+            <h1>Web Developer</h1>
         </a> 
     </header>
-    <div class="hero">
+    <section class="hero">
         <div class="container">
+            <div class="hero__box-container">
+                <h4 class="hero__title">
+                    Александр Раковчен
+                </h4>
+                <div class="hero__box">
+                    <img class="hero_foto" src="foto.jpg" alt="foto">
+                </div>
+                <div class="cv-title">Резюме:</div>
+                <div class="cv">
+                    <button class="glow-on-hover" id="Fullstack-button" type="button">Fullstack</button>
+                    <button class="glow-on-hover" id="Frontend-button" type="button">Frontend</button>
+                </div>
+                <div class="hero__links">
+                    <a class="hero__link" href="mailto:rakovchen@list.ru"><img class="img-link" src="icons\mail-send-regular-24.png" alt="mail"></a>
+                    <a class="hero__link" href="https://api.whatsapp.com/send?phone=79811210961"><img class="img-link" src="icons\whatsapp-logo-24.png" alt="whatsapp"></a>
+                    <a class="hero__link" href="https://telegram.me/Alexander_Rakovchen"><img class="img-link" src="icons\telegram-logo-24.png" alt="telegram"></a>
+                </div>
+            </div>
             <div class="hero__about">
                 <div class="hero__description">
                     <p class="intro">
@@ -68,29 +86,9 @@
                         Если вы ищете человека, готового к вызовам и в поиске возможности сделать важный вклад в вашу команду, давайте связываться! Я открыт к новым интересным предложениям.
                     </p>
                 </div>
-                <p>
-                    <div class="hero__links">
-                        <a class="hero__link" href="mailto:rakovchen@list.ru"><img class="img-link" src="icons\mail-send-regular-24.png" alt="mail"></a>
-                        <a class="hero__link" href="https://api.whatsapp.com/send?phone=79811210961"><img class="img-link" src="icons\whatsapp-logo-24.png" alt="whatsapp"></a>
-                        <a class="hero__link" href="https://telegram.me/Alexander_Rakovchen"><img class="img-link" src="icons\telegram-logo-24.png" alt="telegram"></a>
-                    </div>
-                </p>
-            </div>
-            <div class="hero__box-container">
-                <h4 class="hero__title">
-                    Александр Раковчен
-                </h4>
-                <div class="hero__box">
-                    <img class="hero_foto" src="foto.jpg" alt="foto">
-                </div>
-                <div class="cv-title">Резюме:</div>
-                <div class="cv">
-                    <button class="glow-on-hover" id="Fullstack-button" type="button">Fullstack</button>
-                    <button class="glow-on-hover" id="Frontend-button" type="button">Frontend</button>
-                </div>
             </div>
         </div>
-    </div>
+    </section>
     <script src="main.js" type="module"></script>
 </body>
 </html>

@@ -1,8 +1,14 @@
-body {
-    font-family: 'Garamond', sans-serif;
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+}
+
+body {
+    font-family: 'Garamond', sans-serif;
+    overflow: auto;
+    /* для падающих символов, поле настроено на величину экрана*/
+    /* overflow: hidden; */
+    background-color: #D1E8E2;
 }
 
 .canvas {
@@ -30,6 +36,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .img-logo {
@@ -43,8 +52,9 @@ body {
 }
 
 .container {
-    max-width: 70%;
-    margin: 0 auto;
+    width: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
     display: flex;
     justify-content: space-between;
 }
@@ -55,6 +65,7 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    text-align: justify;
 }
 
 .hero__title {
@@ -72,12 +83,12 @@ body {
 
 .intro, .experience-list, .looking-for, .contact, .about-me, .technologies, .looking-for-list {
     margin: 0;
-    padding: 7px;
+    padding: 0.5vw;
     list-style-type: none;
 }
 
 .intro, .experience-list, .hero__tech, .looking-for-list {
-    padding-left: 30px;
+    padding-left: 2.5vw;
 }
 
 .about-me, .technologies, .looking-for, .contact {
@@ -88,7 +99,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 40%;
+    width: 80%;
 }
 
 .tech-logo {
@@ -96,17 +107,26 @@ body {
 }
 
 .hero__links {
-    width: 100%;
+    margin-top: 10px;
+    width: 70%;
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
+    background-color: inherit;
+    padding: 7px;
+    border-radius: 12px;
+}
+
+.hero__links:hover {
+    background-color: whitesmoke;
 }
 
 .hero__link {
     width: 10%;
+    margin: 0;
 }
 
 .img-link {
-    width: 35%;
+    width: 100%;
 }
 
 .hero__box-container {
@@ -203,3 +223,55 @@ body {
     width: 100%;
     justify-content: space-around;
 }
+
+@media (max-width: 950px) {
+    .img-logo {
+        width: 10vw;
+    }
+
+    .header__logo {
+        margin-bottom: 0;
+        > h1 {
+            font-size: 5vw;
+        }
+    }
+    
+    .container {
+        margin: 0;
+        padding: 1vw;
+    }
+
+    .hero__box-container {
+        margin-top: 2vh;
+    }
+
+    .hero__title, .cv-title, .glow-on-hover {
+        font-size: 3vw;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .hero__box {
+        width: 30vw;
+    }
+
+    .hero__links {
+        padding: 0;
+        width: 100%;
+    }
+
+    .hero__description {
+        font-size: 3vw;
+        padding: 1vw;
+        margin: 0;
+    }
+
+    .intro, .about-me, .technologies, .looking-for, .contact {
+        padding: 0;
+    }
+
+    .tech-logo {
+        width: 7vw;
+        margin: 1vw;
+    }
+} 
